@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run game.exe",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/game.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "windows": {
+        "miDebuggerPath": "C:/raylib/w64devkit/bin/gdb.exe"
+      },
+      "preLaunchTask": "make game"
+    }
+  ]
+}
