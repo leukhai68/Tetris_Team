@@ -55,6 +55,14 @@ bool Grid::IsCellOutside(int row, int column)
     return true;
 }
 
+bool Grid::IsCellEmpty(int row, int column)
+{
+    if(grid[row][column] == 0){
+        return true; // ô trống
+    }
+    return false;
+}
+
 vector<Color> Grid::GetCellColors()
 {
     Color darkGrey = {26, 31, 40, 255};
