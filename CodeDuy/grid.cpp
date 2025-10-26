@@ -46,7 +46,14 @@ void Grid::Draw()
         }
     }
 }
-
+// điều kiện kiểm tra ô trong lưới
+bool Grid::IsCellOutside(int row, int column)
+{
+    if(row >= 0 && row < numRows && column >= 0 && column < numCols){
+        return false;  // nằm bên trong
+    }
+    return true;
+}
 
 vector<Color> Grid::GetCellColors()
 {

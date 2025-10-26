@@ -14,6 +14,7 @@ class Game{
         Grid grid;
 
     private:
+        bool IsBlockOutside();
         vector<Block> blocks;
         Block currentBlock;
         Block nextBlock;
